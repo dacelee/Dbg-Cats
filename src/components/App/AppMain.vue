@@ -103,7 +103,7 @@ export default {
                 showErrorMessage("请先连接钱包才能查看NFT数据")
             }
         }
-
+        const [mintAmount, setMintAmount] = useState(1);
         return {
             errorMsg: computed(() => store.state.wallet.errorMsg),
             totalSupply: computed(() => store.state.contract.totalSupply),
